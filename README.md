@@ -1,1 +1,206 @@
 # Aboutme
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate 50 */
+            color: #1e293b; /* Slate 900 */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; /* Slate 100 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Slate 400 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Slate 500 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4 px-6 fixed w-full z-10 top-0 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-700 rounded-md p-2 hover:bg-indigo-50 transition-colors">Your Name</a>
+            <div class="space-x-4">
+                <a href="#home" class="text-gray-700 hover:text-indigo-700 font-medium rounded-md px-3 py-2 transition-colors">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-700 font-medium rounded-md px-3 py-2 transition-colors">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-700 font-medium rounded-md px-3 py-2 transition-colors">Projects</a>
+                <a href="#journey" class="text-gray-700 hover:text-indigo-700 font-medium rounded-md px-3 py-2 transition-colors">Journey</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Personal Bio & Picture) -->
+    <section id="home" class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 pt-20">
+        <div class="md:w-1/3 flex justify-center mb-8 md:mb-0 md:mr-12">
+            <!-- Replace with your actual picture -->
+            <img src="https://placehold.co/300x300/6366f1/ffffff?text=Your+Photo" alt="Your Profile Picture" class="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-2xl border-4 border-white object-cover">
+        </div>
+        <div class="md:w-2/3 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">Hello, I'm <span class="text-yellow-300">Your Name</span>!</h1>
+            <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto md:mx-0 animate-fade-in-up">
+                A passionate **Data Analyst** and **Business Analyst** dedicated to transforming complex data into actionable insights and driving strategic decisions. I thrive on solving problems and optimizing processes.
+            </p>
+            <a href="#projects" class="inline-block bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-100 transform hover:scale-105 transition-all duration-300">
+                View My Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section ("Who I am") -->
+    <section id="about" class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Who I Am</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg leading-relaxed text-gray-700 space-y-4">
+                    <p>
+                        I am a versatile professional with a strong foundation in both **data analysis** and **business analysis**. My journey has equipped me with the skills to bridge the gap between technical data and business objectives. I am fascinated by how data can tell a story and reveal opportunities for growth and efficiency.
+                    </p>
+                    <p>
+                        My expertise lies in extracting, cleaning, and interpreting large datasets to identify trends, patterns, and insights. Simultaneously, I excel at understanding business needs, defining requirements, and designing solutions that align with organizational goals. I am a firm believer in continuous learning and adapting to new technologies and methodologies.
+                    </p>
+                    <p>
+                        Outside of work, I enjoy [mention a hobby or two, e.g., hiking, reading sci-fi, exploring new cafes]. These activities help me maintain a balanced perspective and foster creativity.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <!-- Placeholder for an illustrative image or icon -->
+                    <img src="https://placehold.co/400x300/cbd5e1/475569?text=About+Me" alt="About Me Illustration" class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Monthly Sales Performance Report -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Monthly Sales Performance Report</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cleaned and analyzed monthly sales data using **Excel/Google Sheets** and basic **SQL** queries to identify top-selling products, regional performance, and revenue trends. Created simple charts for visualization.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-2.5 py-0.5 rounded-full">SQL</span>
+                        <span class="bg-green-100 text-green-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Data Cleaning</span>
+                        <span class="bg-yellow-100 text-yellow-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Basic Visualization</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Customer Feedback Analysis -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Customer Feedback Analysis</h3>
+                    <p class="text-gray-600 mb-4">
+                        Processed customer survey responses using **Excel** (or basic **Python** for larger datasets) to categorize feedback, identify common pain points, and summarize key insights for product or service improvement.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-purple-100 text-purple-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Data Categorization</span>
+                        <span class="bg-red-100 text-red-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Basic Reporting</span>
+                        <span class="bg-teal-100 text-teal-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Python (Optional)</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Social Media Campaign Performance Review -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Social Media Campaign Performance Review</h3>
+                    <p class="text-gray-600 mb-4">
+                        Analyzed engagement metrics (likes, shares, comments) from a small social media campaign using **Excel/Google Sheets** to assess campaign effectiveness and suggest improvements for future initiatives.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-orange-100 text-orange-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Google Sheets</span>
+                        <span class="bg-green-100 text-green-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Marketing Analytics</span>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Performance Measurement</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Basic HR Attrition Analysis -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Basic HR Attrition Analysis</h3>
+                    <p class="text-gray-600 mb-4">
+                        Explored a small, anonymized HR dataset to identify potential factors contributing to employee attrition using **Excel** and basic descriptive statistics. Visualized key findings to highlight trends.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-purple-100 text-purple-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Descriptive Statistics</span>
+                        <span class="bg-yellow-100 text-yellow-700 text-sm font-medium px-2.5 py-0.5 rounded-full">Data Exploration</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">My Journey as an Analyst</h2>
+            <div class="relative pl-8 md:pl-16 border-l-4 border-indigo-300">
+                <!-- Journey Item 1 -->
+                <div class="mb-10 relative">
+                    <div class="absolute -left-6 md:-left-8 top-1 bg-indigo-500 rounded-full w-4 h-4 border-2 border-white"></div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Starting as a Data Enthusiast (Year)</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        My journey began with a curiosity for numbers and a desire to understand 'why' things happen. I started by exploring public datasets and learning foundational **Excel** and **SQL** skills. This early phase was about building a strong analytical mindset.
+                    </p>
+                </div>
+
+                <!-- Journey Item 2 -->
+                <div class="mb-10 relative">
+                    <div class="absolute -left-6 md:-left-8 top-1 bg-indigo-500 rounded-full w-4 h-4 border-2 border-white"></div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Transition to Data Analyst (Year)</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        I landed my first official role as a Data Analyst, where I honed my skills in data cleaning, visualization, and reporting. I became proficient in **Python (Pandas, Matplotlib)** and **Tableau**, creating dashboards that provided clear insights to various departments.
+                    </p>
+                </div>
+
+                <!-- Journey Item 3 -->
+                <div class="mb-10 relative">
+                    <div class="absolute -left-6 md:-left-8 top-1 bg-indigo-500 rounded-full w-4 h-4 border-2 border-white"></div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Embracing Business Analysis (Year)</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Recognizing the need to connect data insights with strategic business needs, I expanded my expertise into Business Analysis. This involved extensive stakeholder communication, requirements gathering, process mapping, and solution design, often leveraging my data skills to inform decisions.
+                    </p>
+                </div>
+
+                <!-- Journey Item 4 -->
+                <div class="mb-10 relative">
+                    <div class="absolute -left-6 md:-left-8 top-1 bg-indigo-500 rounded-full w-4 h-4 border-2 border-white"></div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Current Focus & Future Aspirations</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Today, I continue to evolve as a hybrid analyst, tackling complex problems from both data and business perspectives. My goal is to [mention future aspiration, e.g., lead data strategy, specialize in a niche, mentor new analysts].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p class="mt-2">Connect with me on <a href="#" class="text-indigo-400 hover:text-indigo-300 underline">LinkedIn</a> | <a href="mailto:your.email@example.com" class="text-indigo-400 hover:text-indigo-300 underline">Email</a></p>
+        </div>
+    </footer>
+</body>
+</html>
